@@ -1,0 +1,42 @@
+:root{
+    --primary-color: rgb(195, 34, 109);
+    --secondary-color: white;
+
+    --theme-primary:rgb(195, 34, 109);
+    --theme-secondary: white;
+}
+
+main section img:nth-child(3){
+    width: 60%;
+    max-width: 450px;
+}
+
+main section img:nth-child(1){
+    width: 80%;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+}
+
+main section h1{
+    font-size: 500%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 570px){
+    main section img:nth-child(3){
+        width: 150%;
+    }
+    
+    main section img:nth-child(1){
+        width: 200%;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+    }
+}

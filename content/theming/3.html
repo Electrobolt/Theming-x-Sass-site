@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theming-why should we care about it?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/theming.css">
+</head>
+<body>
+    <header>
+        <section>
+            <a href="https://sass-lang.com/"><img src="../images/S_r.png" alt="S_r"></a>
+        </section>
+        <section>
+            <div class="header-settings">
+                <div>
+                    <label for="header-size">Taille de la police:</label>
+                    <select class="header-size">
+                        <option value="18" class="header--size-select option choose" style="--size:18px;">18</option>
+                        <option value="20" class="header--size-select option" style="--size:20px;">20</option>
+                        <option value="22" class="header--size-select option" style="--size:22px;">22</option>
+                        <option value="24" class="header--size-select option" style="--size:24px;">24</option>
+                        <option value="26" class="header--size-select option" style="--size:26px;">26</option>
+                    </select>
+                </div>                
+                <div>
+                    <button type="button" class="header--theme-button light-pink active">
+                        </button>
+                    <button type="button" class="header--theme-button dark-pink">
+                        </button>
+                    <button type="button" class="header--theme-button light-blue">
+                        </button>
+                    <button type="button" class="header--theme-button dark-blue">
+                        </button>
+                    <button type="button" class="header--theme-button light-yellow">
+                        </button>
+                    <button type="button" class="header--theme-button dark-yellow">
+                        </button>
+                    <button type="button" class="header--theme-button light-red">
+                        </button>
+                    <button type="button" class="header--theme-button dark-green">
+                        </button>
+                </div>
+              </div>
+              <lord-icon
+                src="https://cdn.lordicon.com/ifsxxxte.json" 
+                trigger="click" 
+                state="hover-cog-4"
+                class="parameters">
+            </lord-icon>
+        </section>
+        <section>
+            <menu>
+                    <ul>
+                        <li><a href="../home.html"> <lord-icon src="https://cdn.lordicon.com/cnpvyndp.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Home</h4> </a></li>
+                        <li><a href="../about.html"> <lord-icon src="https://cdn.lordicon.com/kddybgok.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>About Us</h4> </a></li>
+                        <li class="active"><a href="../theming.html"><lord-icon src="https://cdn.lordicon.com/baxknfaw.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Theming</h4> </a></li>
+                        <li><a href="../sass.html"> <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Sass</h4> </a></li>
+                        <li><a href="../others.html">  <lord-icon src="https://cdn.lordicon.com/swcqkzdc.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Others</h4> </a></li>
+                    </ul>
+            </menu>
+            <lord-icon
+                src="https://cdn.lordicon.com/ipnwkgdy.json"  
+                trigger="click" 
+                class="menu">
+            </lord-icon>
+        </section>
+    </header>
+    <main>
+        <aside class="left-aside">
+            <lord-icon
+                src="https://cdn.lordicon.com/whtfgdfm.json"
+                trigger="hover"
+                class="link-arrow">
+            </lord-icon>
+            <nav class="nav-links">
+                <ol>
+                    <li><a href="1.html">What is a theme</a></li>
+                    <li><a href="2.html">What is theming</a></li>
+                    <li><a href="#" style="font-weight: bolder; text-decoration: underline;">Why should you care about website theming</a></li>
+                    <li><a href="4.html">How to Use Theme Properties</a></li>
+                </ol>
+            </nav>
+        </aside>
+        <section class="content">
+            
+            <h1 >WHY SHOULD YOU CARE ABOUT WEBSITE THEMING?</h1>
+            <hr>
+            <P>
+                When you use Theming in your web site, you surely let users know that you care about their personal preferences. And in this case they feel free and relax to visit your website.
+            </P><br>
+            <img src="../images/satisfaction.png" alt="satisfaction">
+            <hr>
+        </section>
+        <aside class="right-aside">
+            <img src="../images/themes.jpg" alt="themes">
+        </aside>
+    </main>
+    <footer>
+        © Copyright GI-2025-theming-sass
+    </footer>
+</body>
+<script src="../js/index.js"></script>
+<script src="../js/size.js"></script>
+<script src="../js/responsive.js"></script>
+<script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
+</html>

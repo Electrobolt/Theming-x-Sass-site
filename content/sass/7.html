@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass-Control Directives And Expressions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/sass.css">
+</head>
+<body>
+    <header>
+        <section>
+            <a href="https://sass-lang.com/"><img src="../images/S_r.png" alt="S_r"></a>
+        </section>
+        <section>
+            <div class="header-settings">
+                <div>
+                    <label for="header-size">Taille de la police:</label>
+                    <select class="header-size">
+                        <option value="18" class="header--size-select option choose" style="--size:18px;">18</option>
+                        <option value="20" class="header--size-select option" style="--size:20px;">20</option>
+                        <option value="22" class="header--size-select option" style="--size:22px;">22</option>
+                        <option value="24" class="header--size-select option" style="--size:24px;">24</option>
+                        <option value="26" class="header--size-select option" style="--size:26px;">26</option>
+                    </select>
+                </div>                
+                <div>
+                    <button type="button" class="header--theme-button light-pink active">
+                        </button>
+                    <button type="button" class="header--theme-button dark-pink">
+                        </button>
+                    <button type="button" class="header--theme-button light-blue">
+                        </button>
+                    <button type="button" class="header--theme-button dark-blue">
+                        </button>
+                    <button type="button" class="header--theme-button light-yellow">
+                        </button>
+                    <button type="button" class="header--theme-button dark-yellow">
+                        </button>
+                    <button type="button" class="header--theme-button light-red">
+                        </button>
+                    <button type="button" class="header--theme-button dark-green">
+                        </button>
+                </div>
+              </div>
+              <lord-icon
+                src="https://cdn.lordicon.com/ifsxxxte.json" 
+                trigger="click" 
+                state="hover-cog-4"
+                class="parameters">
+            </lord-icon>
+        </section>
+        <section>
+            <menu>
+                    <ul>
+                        <li><a href="../home.html"> <lord-icon src="https://cdn.lordicon.com/cnpvyndp.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Home</h4> </a></li>
+                        <li><a href="../about.html"> <lord-icon src="https://cdn.lordicon.com/kddybgok.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>About Us</h4> </a></li>
+                        <li><a href="../theming.html"><lord-icon src="https://cdn.lordicon.com/baxknfaw.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Theming</h4> </a></li>
+                        <li class="active"><a href="../sass.html"> <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Sass</h4> </a></li>
+                        <li><a href="../others.html">  <lord-icon src="https://cdn.lordicon.com/swcqkzdc.json" trigger="hover" stroke="bold" target="li"></lord-icon> <h4>Others</h4> </a></li>
+                    </ul>
+            </menu>
+            <lord-icon
+                src="https://cdn.lordicon.com/ipnwkgdy.json"  
+                trigger="click" 
+                class="menu">
+            </lord-icon>
+        </section>
+    </header>
+    <main>
+        <aside class="left-aside">
+            <lord-icon
+                src="https://cdn.lordicon.com/whtfgdfm.json"
+                trigger="hover"
+                class="link-arrow">
+            </lord-icon>
+            <nav class="nav-links">
+                <ol>
+                    <li><a href="1.html">What Is Sass</a></li>
+                    <li><a href="2.html" >Origine Of Sass</a></li>
+                    <li><a href="3.html" >Features Of Sass</a></li>
+                    <li><a href="4.html">How Use Sass</a></li>
+                    <li><a href="5.html">Sass Variables</a></li>
+                    <li><a href="6.html">Rules And Directives</a></li>
+                    <li><a href="#" style="font-weight: bolder; text-decoration: underline;">Control Directives And Expressions</a></li>
+                    <li><a href="8.html">Others Tools For Sass</a></li>
+                </ol>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1>CONTROL DIRECTIVES AND EXPRESSIONS</h1><hr>
+            <img src="../images/sass-control.png" alt="controls and directives">
+            <p> <br> Sass control directives and expressions facilitate you to use styling based on some conditions.</p><hr>
+            <h3>@if Directive</h3><hr>
+            <p>
+                <b>@if</b> directive specifies the execution of code statements according to the result of the expression. A @if statement can be used with several @if else statements and one @else statement.
+            </p><hr>
+            <h3>@else-if Directive</h3><hr>
+            <p>
+              <b>@else-if</b> directive is used when @if directive is failed. If it is failed @else directive is used.
+            </p><hr>
+            <h3>@for Directive</h3><hr>
+            <p>
+               <b>@for</b> directive facilitates you to generate a style in a loop. It is used when you require repeatedly set of styles. It uses counter variable to set the output for each iteration.
+            </p><hr>
+            <h3>@each Directive</h3><hr>
+            <p>
+               <b>@each</b> directive contains the value of each item in the list. It is also used with multiple assignments and multiple assignments with map.
+            </p><hr>
+            <h3>@each directive with multiple assignments</h3><hr>
+            <p>
+                We can use <b>@each</b> directive with multiple values like $var1, $var2, $var3, ... in .
+            </p><hr>
+            <h3>@for Directive with To Keyword</h3><hr>
+            <p>
+                <b>@for</b> directive, the "to" keyword is used to specify the range form value to the value before value.
+            </p><hr>
+            <h3>@while Directive</h3><hr>
+            <p>
+                The <b>@while</b> directive is very similar to @for directive. It also takes SassScript expressions and iteratively outputs nested styles until the statement returns to false. The value of counter is changed (increased/ decreased) after every iteration.
+            </p><hr>
+        </section>
+        <aside class="right-aside">
+            <img src="../images/Sass.png" alt="sass">
+        </aside>
+    </main>
+    <footer>
+        © Copyright GI-2025-theming-sass
+    </footer>
+</body>
+<script src="../js/index.js"></script>
+<script src="../js/size.js"></script>
+<script src="../js/responsive.js"></script>
+<script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
+</html>
